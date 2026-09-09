@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Espacio de Oración y Alabanza</title>
+    <style>
+        /* Estilos generales */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f4f6f9;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .container {
+            max-width: 700px;
+            width: 100%;
+            background-color: #ffffff;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+            padding: 30px;
+            box-sizing: border-box;
+        }
+
+        h1 {
+            color: #2c3e50;
+            text-align: center;
+            margin-bottom: 5px;
+        }
+
+        .subtitle {
+            text-align: center;
+            color: #7f8c8d;
+            font-size: 0.95em;
+            margin-bottom: 30px;
+        }
+
+        /* Sección de Peticiones de Oración */
+        .section-box {
+            background-color: #f8fafc;
+            border-left: 5px solid #3498db;
+            padding: 20px;
+            border-radius: 6px;
+            margin-bottom: 30px;
+        }
+
+        .section-box h2 {
+            margin-top: 0;
+            color: #2980b9;
+            font-size: 1.3em;
+        }
+
+        label {
+            display: block;
+            margin-top: 10px;
+            font-weight: 600;
+            font-size: 0.9em;
+            color: #4a5568;
+        }
+
+        input[type="text"], textarea {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            border: 1px solid #cbd5e1;
+            border-radius: 6px;
+            font-family: inherit;
+            box-sizing: border-box;
+        }
+
+        button {
+            margin-top: 15px;
+            background-color: #3498db;
+            color: white;
+            border: none;
+            padding: 12px 20px;
+            border-radius: 6px;
+            cursor: pointer;
+            font-weight: bold;
+            width: 100%;
+            transition: background 0.3s;
+        }
+
+        button:hover {
+            background-color: #2980b9;
+        }
+
+        /* Sección del Cancionero Digital */
+        .song-card {
+            background-color: #fff;
+            border: 1px solid #e2e8f0;
+            border-radius: 8px;
+            padding: 15px;
+            margin-bottom: 15px;
+        }
+
+        .song-title {
+            font-weight: bold;
+            color: #2c3e50;
+            font-size: 1.1em;
+            margin-bottom: 8px;
+        }
+
+        .song-lyrics {
+            font-size: 0.9em;
+            color: #4a5568;
+            white-space: pre-line;
+            line-height: 1.5;
+            background-color: #f1f5f9;
+            padding: 10px;
+            border-radius: 5px;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 20px;
+            font-size: 0.85em;
+            color: #94a3b8;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>🙏 Rincón de Oración & Alabanza 🎶</h1>
+        <p class="subtitle">Comunidad Adventista — Espacio de Fe y Comunión</p>
+
+        <!-- SECCIÓN 1: Formulario de Peticiones de Oración -->
+        <div class="section-box">
+            <h2>Peticiones de Oración</h2>
+            <p style="font-size:0.9em; color:#64748b;">Déjanos tu pedido para que estemos orando por ti en nuestros cultos y reuniones.</p>
+
+            <form>
+                <label for="nombre">Nombre (opcional):</label>
+                <input type="text" id="nombre" placeholder="Escribe tu nombre o 'Anónimo'">
+
+                <label for="motivo">Motivo de Oración:</label>
+                <textarea id="motivo" rows="3" placeholder="Escribe aquí tu petición..."></textarea>
+
+                <button type="button" onclick="alert('¡Tu petición ha sido enviada! Estaremos orando por ti.')">Enviar Petición</button>
+            </form>
+        </div>
+
+        <!-- SECCIÓN 2: Cancionero Digital -->
+        <div class="section-box" style="border-left-color: #2ecc71;">
+            <h2 style="color: #27ae60;">Cancionero / Himnario Digital</h2>
+            <p style="font-size:0.9em; color:#64748b;">Letras de cantos e himnos para nuestras reuniones.</p>
+
+            <div class="song-card">
+                <div class="song-title">🎼 1. Cuán Grande Es Él</div>
+                <div class="song-lyrics">
+Señor, mi Dios, al contemplar los cielos,
+El firmamento y las estrellas mil,
+Al oír tu voz en los potentes truenos
+Y ver el sol en su esplendor lucir...
+
+// Mi corazón se entona en la canción:
+¡Cuán grande es Él! ¡Cuán grande es Él! //
+                </div>
+            </div>
+
+            <div class="song-card">
+                <div class="song-title">🎼 2. Maranatha (El Señor Viene)</div>
+                <div class="song-lyrics">
+Cristo viene, pronto volverá,
+Su promesa fiel se cumplirá.
+Velad y orad, la noche terminará,
+¡Maranatha, el Señor vendrá!
+                </div>
+            </div>
+        </div>
+
+        <footer>
+            <p>© Proyecto desarrollado para el Curso de Computación</p>
+        </footer>
+    </div>
+
+</body>
+</html>
