@@ -130,19 +130,19 @@
         <h1>🙏 Rincón de Oración & Alabanza 🎶</h1>
         <p class="subtitle">Comunidad Adventista — Espacio de Fe y Comunión</p>
 
-        <!-- SECCIÓN 1: Formulario de Peticiones de Oración -->
+        <!-- SECCIÓN 1: Formulario de Peticiones de Oración (Conectado a Formspree) -->
         <div class="section-box">
             <h2>Peticiones de Oración</h2>
             <p style="font-size:0.9em; color:#64748b;">Déjanos tu pedido para que estemos orando por ti en nuestros cultos y reuniones.</p>
 
-            <form>
+            <form action="https://formspree.io/f/xdeoydve" method="POST">
                 <label for="nombre">Nombre (opcional):</label>
-                <input type="text" id="nombre" placeholder="Escribe tu nombre o 'Anónimo'">
+                <input type="text" id="nombre" name="Nombre" placeholder="Escribe tu nombre o 'Anónimo'">
 
                 <label for="motivo">Motivo de Oración:</label>
-                <textarea id="motivo" rows="3" placeholder="Escribe aquí tu petición..."></textarea>
+                <textarea id="motivo" name="Petición de Oración" rows="3" required placeholder="Escribe aquí tu petición..."></textarea>
 
-                <button type="button" onclick="alert('¡Tu petición ha sido enviada! Estaremos orando por ti.')">Enviar Petición</button>
+                <button type="submit">Enviar Petición</button>
             </form>
         </div>
 
